@@ -18,14 +18,10 @@ export default function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/sign-in" element={<SignIn />}></Route>
         <Route path="/sign-up" element={<SignUp />}></Route>
-        <Route
-          path="/dashboard"
-          element={
-            <PrivateRoute>
-              <Dashbaord />
-            </PrivateRoute>
-          }
-        ></Route>
+        <Route element={<PrivateRoute />}>
+          <Route path="/dashboard" element={<Dashbaord />}></Route>
+        </Route>
+
         <Route path="/projects" element={<Projects />}></Route>
       </Routes>
       <Footer />
