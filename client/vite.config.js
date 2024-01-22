@@ -11,5 +11,9 @@ export default defineConfig({
       },
     },
   },
-  plugins: [react()],
+  plugins: [
+    react({
+      jsxRuntime: 'classic'
+    })
+  ],
 });
