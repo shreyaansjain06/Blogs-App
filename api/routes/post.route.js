@@ -4,11 +4,6 @@ import {
   create,
   deletepost,
   getposts,
-} from '../controllers/post.controller.js';
-import {
-  create,
-  deletepost,
-  getposts,
   updatepost,
 } from '../controllers/post.controller.js';
 
